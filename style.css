@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+     font-family: 'Montserrat', sans-serif;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    
+}
+nav{
+    position: fixed;
+}
+
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+  }
+  
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+@media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+header video {
+      display: none;
+    }
+  }
+.mida{
+      color: rgba(255,255,255,0.9);
+      position: relative;
+      text-shadow: 5px -5px 2px rgb(102, 99, 99);
+      margin-bottom: 250px;
+      text-transform: uppercase;
+  }
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+img{
+    height: 500px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+    border: 1px solid;
+    
+    border-color: transparent;
+    background-color: rgba(0,0,0,0.02);
+}
+footer{
+    background-color: black;
+    height: 80px;
+    color: white;
+    
+    margin-top: 100px;
+}
+.collapse,.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  
+}
+span{
+  opacity: 0;
+  transition: all 0.6s ease;
+  transform: translateY(-70px);
+  display: inline-block;
+}
+span.fadeall{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.navbar-toggler-icon{
+  opacity: 1;
+  transition: none;
+  transform: none;
+  
+}
+.carousel-control-prev-icon{
+  opacity: 1;
+  transition: none;
+  transform: none;
+}
+.carousel-control-next-icon{
+  opacity: 1;
+  transition: none;
+  transform: none;
+}
+.modal{
+  color: black;
+}
+.btn{
+  background-color: black;
+  border: none;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#conbtn{
+  background-color: black;
+  border: none;
+}
+#conbtn:hover{
+  background-color: #1a1a1a;
+}
+#topbtn{
+  background-color: black;
+  border: none;
+  margin-left: 50px;
+  
+}
+#topbtn:hover{
+  background-color: #1a1a1a;
+}
+
+#modal{
+
+  color: rgba(0,0,0,0.9);
+}
